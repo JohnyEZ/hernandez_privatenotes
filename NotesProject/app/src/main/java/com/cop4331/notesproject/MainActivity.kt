@@ -336,7 +336,7 @@ class MainActivity : AppCompatActivity() {
                 val editor = mSharedPref!!.edit()
                 editor.putString("Sort", "category")
                 editor.apply()
-                loadQueryDescending("%")
+                loadQueryCategory("%")
             }
             dialogInterface.dismiss()
         }

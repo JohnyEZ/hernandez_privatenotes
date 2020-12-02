@@ -52,7 +52,7 @@ class Pin : AppCompatActivity() {
                         sharedPref.setPin(numbers.toInt())
                         pinEnabled = true
                         sharedPref.setAccess(true)
-                        Toast.makeText(this, "Lock icon allows you to Enable or Disable using Pin", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, "Lock icon allows you to enable or disable pin access", Toast.LENGTH_LONG).show()
                         var intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)
                         finish()
