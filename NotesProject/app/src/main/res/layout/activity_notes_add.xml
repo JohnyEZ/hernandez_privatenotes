@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            tools:context=".AddNotes">
+
+
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="Date"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/noteName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="20dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Title"
+                android:inputType="textPersonName"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                app:layout_constraintTop_toBottomOf="@id/textViewDate"
+                app:layout_constraintVertical_bias="0.107"
+                android:gravity="center_horizontal" />
+
+            <!--<EditText
+                android:id="@+id/noteTag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="@string/label"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:hint="@string/label"
+                android:inputType="text"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.22" />-->
+
+            <AutoCompleteTextView
+                android:id="@+id/noteTag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Label"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                app:layout_constraintTop_toBottomOf="@+id/noteName" />
+
+            <EditText
+                android:id="@+id/noteDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:gravity="start|top"
+                android:hint="Note"
+                android:inputType="textMultiLine"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/noteTag"
+                tools:ignore="RtlCompat" />
+
+            <Button
+                android:id="@+id/addNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                app:backgroundTint="#ffffff"
+                android:fontFamily="@font/montserrat"
+                android:includeFontPadding="true"
+                android:onClick="endActivity"
+                android:text="Save"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/noteDesc"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="OnClick" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

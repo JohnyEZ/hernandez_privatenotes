@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Notes</string>
+    <string name="title_activity_pin">Pin</string>
+    <string name="tag">Label</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="title_activity_splash_screen">Notes</string>
+    <string name="title_activity_pin_reset">Pin Reset</string>
+</resources>

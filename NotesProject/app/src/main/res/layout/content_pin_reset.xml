@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pinCard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:id="@+id/rOldPinText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Pin"
+        android:textColor="#ffffff"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/rpin1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:importantForAccessibility="no"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColor="#ffffff"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/rpin2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColor="#ffffff"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/rpin3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColor="#ffffff"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/rpin4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColor="#ffffff"
+            android:textAlignment="center" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/rbtn1"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:onClick="NumberClicked"
+            app:backgroundTint="@color/colorPrimary"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/rbtn2"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:onClick="NumberClicked"
+            app:backgroundTint="@color/colorPrimary"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/rbtn3"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:onClick="NumberClicked"
+            app:backgroundTint="@color/colorPrimary"
+            android:text="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/rbtn4"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+
+            android:onClick="NumberClicked"
+            app:backgroundTint="@color/colorPrimary"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/rbtn5"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+
+            android:onClick="NumberClicked"
+            app:backgroundTint="@color/colorPrimary"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/rbtn6"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+
+            android:onClick="NumberClicked"
+            app:backgroundTint="@color/colorPrimary"
+            android:text="6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/rbtn7"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+
+            android:onClick="NumberClicked"
+            app:backgroundTint="@color/colorPrimary"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/rbtn8"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+
+            android:onClick="NumberClicked"
+            app:backgroundTint="@color/colorPrimary"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/rbtn9"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+
+            android:onClick="NumberClicked"
+            app:backgroundTint="@color/colorPrimary"
+            android:text="9" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/rdelete"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+
+            android:text="Back"
+            android:textColor="#ffffff"
+            app:backgroundTint="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/rbtn0"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:onClick="NumberClicked"
+            android:text="0"
+            app:backgroundTint="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/rbtnOk"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@android:string/ok"
+            android:textColor="#ffffff"
+            app:backgroundTint="@color/colorAccent" />
+    </LinearLayout>
+</LinearLayout>
